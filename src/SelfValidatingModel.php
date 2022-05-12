@@ -1,6 +1,6 @@
 <?php
 
-namespace MinuteOfLaravel\SelfValidatingModel;
+namespace MinuteOfLaravel\Validation;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Validator;

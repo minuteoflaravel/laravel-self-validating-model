@@ -18,7 +18,7 @@
     "type": "library",
     "autoload": {
         "psr-4": {
-            "MinuteOflaravel\\SelfValidatingModel\\": "src"
+            "MinuteOfLaravel\\Validation\\": "src"
         }
     },
     "authors": [
