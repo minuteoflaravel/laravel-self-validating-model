@@ -1,5 +1,5 @@
 # Laravel Self-Validating Model
-This package contains an extended Eloquent Model class which self-validates against validation rules specified in Model's ```rules``` property when Model is saved/updated  
+This package contains an extended Eloquent Model class which self-validates against validation rules specified in the Model's rules property when the Model is saved/updated
 
 Works with:
 - Laravel 9
