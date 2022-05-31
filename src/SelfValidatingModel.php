@@ -8,12 +8,15 @@ use Illuminate\Support\Facades\Validator;
 class SelfValidatingModel extends Model {
     public $rules = [];
 
-    public static function boot()
+    public static function bootSelfValidatingModel()
     {
-        parent::boot();
-
         static::saving(function ($model) {
-            Validator::make($model->toArray(), $model->rules)->validate();
+            Validator::make($model->toArray(), $this->selfValidateRules())->validate();
         });
+    }
+
+    public function selfValidateRules(): array
+    {
+        return $this->rules;
     }
 }
